@@ -31,7 +31,6 @@ Download the package from Github and install it locally:
 ```python
 git clone https://github.com/yiwen-yang/MCGAE
 cd MCGAE/
-python3 setup.py install --user
 ```
 ### 2. Import modules
 
