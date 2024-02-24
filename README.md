@@ -3,7 +3,7 @@
 
 
 ### 1. Installation
-The installation should take a few minutes on a normal computer. To install SpaGCN package you must make sure that your python version is over 3.9 If you don’t know the version of python you can check it by:
+The installation should take a few minutes on a normal computer. To install MCGAE package you must make sure that your python version is over 3.9 If you don’t know the version of python you can check it by:
 
 
 ```python
