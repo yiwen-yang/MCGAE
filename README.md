@@ -94,7 +94,7 @@ model = MCGAE(
     use_emb_g_rec=True,
     dropout=0.01,#0.01
     random_seed=2,
-    w_morph=0,
+    w_morph=0.9,
 )
 
 
