@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCGAE Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            overflow: auto;
+        }
+        code {
+            background: #eaeaea;
+            padding: 0.2rem 0.4rem;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .search-bar input[type="text"] {
+            width: 80%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        .search-bar input[type="submit"] {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MCGAE Tutorial</h1>
+    </header>
+    <nav>
+        <a href="#installation">Installation</a>
+        <a href="#usage">Usage</a>
+        <a href="#examples">Examples</a>
+    </nav>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Search...">
+        <input type="submit" value="Search" onclick="searchContent()">
+    </div>
+    <div class="container">
+        <section id="installation">
+            <h2>Installation</h2>
+            <pre><code>git clone https://github.com/yiwen-yang/MCGAE.git
+cd MCGAE
+pip install -r requirements.txt</code></pre>
+        </section>
+        <section id="usage">
+            <h2>Usage</h2>
+            <pre><code>python main.py --config config.yaml</code></pre>
+        </section>
+        <section id="examples">
+            <h2>Examples</h2>
+            <pre><code>python main.py --mode train
+python main.py --mode test</code></pre>
+        </section>
+    </div>
+    <script>
+        function searchContent() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                if (section.innerText.toLowerCase().includes(input)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
