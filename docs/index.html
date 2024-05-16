@@ -76,6 +76,7 @@
             background-color: #e2e8f0;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -85,36 +86,20 @@
             <input type="submit" value="Search" onclick="searchContent()">
         </div>
         <nav>
-            <a href="#installation">Installation</a>
-            <a href="#tutorial1">Tutorial 1: xxx</a>
-            <a href="#tutorial2">Tutorial 2: xxx</a>
-            <a href="#tutorial3">Tutorial 3: xxx</a>
-            <a href="#references">References</a>
+            <a href="#installation" onclick="loadMarkdown('installation.md')">Installation</a>
+            <a href="#tutorial1" onclick="loadMarkdown('tutorial1.md')">Tutorial 1: xxx</a>
+            <a href="#tutorial2" onclick="loadMarkdown('tutorial2.md')">Tutorial 2: xxx</a>
+            <a href="#tutorial3" onclick="loadMarkdown('tutorial3.md')">Tutorial 3: xxx</a>
+            <a href="#references" onclick="loadMarkdown('references.md')">References</a>
         </nav>
         <a href="https://github.com/yiwen-yang/MCGAE" class="github-button">GitHub</a>
     </div>
-    <div class="content">
+    <div class="content" id="content">
         <section id="installation">
             <h2>Installation</h2>
             <pre><code>git clone https://github.com/yiwen-yang/MCGAE.git
 cd MCGAE
 pip install -r requirements.txt</code></pre>
-        </section>
-        <section id="tutorial1">
-            <h2>Tutorial 1: xxx</h2>
-            <p>Content for tutorial 1 goes here...</p>
-        </section>
-        <section id="tutorial2">
-            <h2>Tutorial 2: xxx</h2>
-            <p>Content for tutorial 2 goes here...</p>
-        </section>
-        <section id="tutorial3">
-            <h2>Tutorial 3: xxx</h2>
-            <p>Content for tutorial 3 goes here...</p>
-        </section>
-        <section id="references">
-            <h2>References</h2>
-            <p>References content goes here...</p>
         </section>
     </div>
     <script>
@@ -128,6 +113,16 @@ pip install -r requirements.txt</code></pre>
                     section.style.display = 'none';
                 }
             });
+        }
+
+        function loadMarkdown(file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(text => {
+                    let converter = new showdown.Converter();
+                    let html = converter.makeHtml(text);
+                    document.getElementById('content').innerHTML = html;
+                });
         }
     </script>
 </body>
