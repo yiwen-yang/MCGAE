@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +13,8 @@
             display: flex;
         }
         .sidebar {
-            background-color: #30b4de;
-            color: #fff;
+            background-color: #1e3a8a; /* 这里是导航栏背景色 */
+            color: #fff; /* 这里是导航栏文字颜色 */
             width: 250px;
             height: 100vh;
             position: fixed;
@@ -40,13 +41,13 @@
         }
         nav a {
             display: block;
-            color: #fff;
+            color: #fff; /* 这里是导航链接文字颜色 */
             padding: 1rem;
             text-decoration: none;
             text-align: center;
         }
         nav a:hover {
-            background-color: #3b82f6;
+            background-color: #3b82f6; /* 这里是导航链接悬停背景色 */
         }
         .content {
             margin-left: 250px;
@@ -64,7 +65,7 @@
         }
         .github-button {
             background-color: #fff;
-            color: #1e3a8a;
+            color: #1e3a8a; /* 这里是GitHub按钮文字颜色 */
             padding: 0.5rem 1rem;
             border: none;
             text-decoration: none;
@@ -95,12 +96,7 @@
         <a href="https://github.com/yiwen-yang/MCGAE" class="github-button">GitHub</a>
     </div>
     <div class="content" id="content">
-        <section id="installation">
-            <h2>Installation</h2>
-            <pre><code>git clone https://github.com/yiwen-yang/MCGAE.git
-cd MCGAE
-pip install -r requirements.txt</code></pre>
-        </section>
+        <!-- 动态加载的内容将会显示在这里 -->
     </div>
     <script>
         function searchContent() {
@@ -124,6 +120,11 @@ pip install -r requirements.txt</code></pre>
                     document.getElementById('content').innerHTML = html;
                 });
         }
+
+        // installation.md
+        document.addEventListener('DOMContentLoaded', function() {
+            loadMarkdown('installation.md');
+        });
     </script>
 </body>
 </html>
