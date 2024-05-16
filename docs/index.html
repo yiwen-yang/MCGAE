@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCGAE Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            background-color: #1e3a8a;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .search-bar {
+            margin: 20px 0;
+            width: 80%;
+        }
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+        nav {
+            width: 100%;
+        }
+        nav a {
+            display: block;
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #3b82f6;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            overflow: auto;
+        }
+        code {
+            background: #eaeaea;
+            padding: 0.2rem 0.4rem;
+        }
+        .github-button {
+            background-color: #fff;
+            color: #1e3a8a;
+            padding: 0.5rem 1rem;
+            border: none;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .github-button:hover {
+            background-color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>MCGAE</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search...">
+            <input type="submit" value="Search" onclick="searchContent()">
+        </div>
+        <nav>
+            <a href="#installation">Installation</a>
+            <a href="#tutorial1">Tutorial 1: xxx</a>
+            <a href="#tutorial2">Tutorial 2: xxx</a>
+            <a href="#tutorial3">Tutorial 3: xxx</a>
+            <a href="#references">References</a>
+        </nav>
+        <a href="https://github.com/yiwen-yang/MCGAE" class="github-button">GitHub</a>
+    </div>
+    <div class="content">
+        <section id="installation">
+            <h2>Installation</h2>
+            <pre><code>git clone https://github.com/yiwen-yang/MCGAE.git
+cd MCGAE
+pip install -r requirements.txt</code></pre>
+        </section>
+        <section id="tutorial1">
+            <h2>Tutorial 1: xxx</h2>
+            <p>Content for tutorial 1 goes here...</p>
+        </section>
+        <section id="tutorial2">
+            <h2>Tutorial 2: xxx</h2>
+            <p>Content for tutorial 2 goes here...</p>
+        </section>
+        <section id="tutorial3">
+            <h2>Tutorial 3: xxx</h2>
+            <p>Content for tutorial 3 goes here...</p>
+        </section>
+        <section id="references">
+            <h2>References</h2>
+            <p>References content goes here...</p>
+        </section>
+    </div>
+    <script>
+        function searchContent() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let sections = document.querySelectorAll('.content section');
+            sections.forEach(section => {
+                if (section.innerText.toLowerCase().includes(input)) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
