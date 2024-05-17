@@ -24,6 +24,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          mkdocs gh-deploy --config-file mcgae_io/mkdocs.yml --force
+          mkdocs gh-deploy --config-file MCGAE/mcgae_io/mkdocs.yml --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
