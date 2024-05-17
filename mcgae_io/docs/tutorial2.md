@@ -99,7 +99,7 @@ plt.show()
 
 
     
-![png](output_5_0.png)
+![png](pic2/output_5_0.png)
     
 
 
@@ -343,12 +343,12 @@ model.train(weight_decay=5e-4,
     fitting ...
       |======================================================================| 100%
         
-![png](output_8_4.png)
+![png](pic2/output_8_4.png)
     
 
 
 
     
-![png](output_8_5.png)
+![png](pic2/3d_out.png)
     
 
