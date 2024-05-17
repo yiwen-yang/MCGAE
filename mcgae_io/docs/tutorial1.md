@@ -170,5 +170,3 @@ sc.pl.embedding(adata, basis="spatial", color="leiden", s=20, show=False, title=
   <img src="pic2/mouse_olfactory.jpg" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
 </div>
 
-    
-
