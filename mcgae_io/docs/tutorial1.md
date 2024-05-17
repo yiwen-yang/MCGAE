@@ -166,6 +166,6 @@ sc.pl.embedding(adata, basis="spatial", color="leiden", s=20, show=False, title=
 
 
     
-![png](mouse_olfactory.jpg)
+![jpg](pic2/mouse_olfactory.jpg)
     
 
