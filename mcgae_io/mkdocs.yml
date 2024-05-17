@@ -1,0 +1,19 @@
+site_name: MCGAE
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Tutorial 1--Mouse Olfactory: tutorial1.md
+  - Tutorial 2--Constructs 3D spatial domains: tutorial2.md
+  - Tutorial 3--Colorectal cancer liver metastasis data: tutorial3.md
+  - References: references.md
+
