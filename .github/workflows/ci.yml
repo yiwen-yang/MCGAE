@@ -6,7 +6,7 @@ on:
       - main  # 设定部署的分支
 
 permissions:
-  contents: write
+  contents: write  # Ensure GITHUB_TOKEN has write permission to contents
 
 jobs:
   deploy:
@@ -30,4 +30,3 @@ jobs:
           mkdocs gh-deploy --config-file mcgae_io/mkdocs.yml --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
