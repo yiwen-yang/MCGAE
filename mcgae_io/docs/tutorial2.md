@@ -98,10 +98,7 @@ plt.show()
 ```
 
 
-<div style="text-align: center;">
-  <img src="pic2/output_5_0.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
-
+![png](pic2/output_5_0.png)
     
 
 
@@ -348,5 +345,4 @@ model.train(weight_decay=5e-4,
 
 
 ![jpg](pic2/3d_out.jpg)  
-
 
