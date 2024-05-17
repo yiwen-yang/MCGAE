@@ -328,6 +328,5 @@ sc.pl.embedding(adata, basis="spatial", color="leiden", s=20, show=False, title=
     <Axes: title={'center': 'MCGAE'}, xlabel='spatial1', ylabel='spatial2'>
 
 
+![Mouse Olfactory](pic2/mouse_olfactory.jpg)
 
-
-![Mouse Olfactory] (pic2/mouse_olfactory.jpg)
