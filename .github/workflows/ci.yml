@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4  # 使用 Node.js 20
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4  # 使用 Node.js 20
         with:
           python-version: '3.x'
 
@@ -27,6 +27,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          mkdocs gh-deploy --config-file mcgae_io/mkdocs.yml --remote-branch gh-pages --force
+          mkdocs gh-deploy --config-file mcgae_io/mkdocs.yml --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
