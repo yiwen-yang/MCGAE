@@ -344,15 +344,9 @@ model.train(weight_decay=5e-4,
 
     fitting ...
       |======================================================================| 100%
-        
-
-<div style="text-align: center;">
-  <img src="pic2/output_8_4.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
+![jpg](pic2/output_8_4.png)      
 
 
-<div style="text-align: center;">
-  <img src="pic2/3d_out.jpg" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
-    
+![jpg](pic2/3d_out.jpg)  
+
 
