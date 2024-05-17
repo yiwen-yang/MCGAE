@@ -236,22 +236,14 @@ sc.pp.neighbors(adata, use_rep="z", n_neighbors=10, random_state=1234)
 sc.tl.leiden(adata, key_added="leiden", resolution=res, random_state=1234)
 new_type = refine_label(adata, key='leiden', radius=30)
 adata.obs['leiden'] = new_type
-sc.pl.spatial(adata, img_key="hires", color='leiden',
-                show=False, title="MCGAE")
-sc.pl.embedding(adata, basis="spatial", color="leiden", legend_loc="on data")
+sc.pl.spatial(adata, img_key="hires", color='leiden', title="MCGAE")
 plt.tight_layout()
 ```
 
     Searching resolution...
     
-![png](output_3_2.png)
-    
+![jpg](pic3/mcgae.jpg)
 
-
-
-    
-![png](output_3_3.png)
-    
 
 
 
