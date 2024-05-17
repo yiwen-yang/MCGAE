@@ -3,6 +3,9 @@
 <div style="text-align: center;">
   <img src="pic2/workflow.png" alt="Example Image" width="300" height="400"/>
 </div>
+<div style="text-align: center;">
+  <img src="pic2/workflow.png" alt="Example Image" style="width: 500px; height: auto;"/>
+</div>
 
 <div style="text-align: justify;">
     MCGAE is a novel deep computational framework designed for comprehensive analysis of spatial transcriptomics data across platforms, integrating morphological images. Given spatial multi-modal transcriptomics data, MCGAE commences by initially acquiring the original gene expression matrix alongside the adjacency matrix, which is computed based on spatial coordinates. The framework's multi-view construction is facilitated through a modular modelling approach, granting users the flexibility to select from a variety of enhancement methods, including but not limited to simple autoencoders, for the purpose of obtaining enhanced views of gene expression matrix \(X\). Furthermore, the construction of multiple views of adjacency matrix \(A\) is achievable by employing diverse similarity metrics, thereby enriching the data analysis spectrum by capturing a multitude of perspectives and relationships inherent within the spatial transcriptomics data.
