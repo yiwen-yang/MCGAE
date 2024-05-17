@@ -5,6 +5,9 @@ on:
     branches:
       - main  # 设定部署的分支
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,3 +30,4 @@ jobs:
           mkdocs gh-deploy --config-file mcgae_io/mkdocs.yml --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
