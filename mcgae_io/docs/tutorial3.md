@@ -264,29 +264,18 @@ sc.pl.spatial(adata2, img_key="hires", color="ALB", title="ALB_denoise", color_m
 ```
 
 
-<div style="text-align: center;">
-  <img src="pic3/output_4_0.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
+
     
+![jpg](pic3/output_4_0.png)      
+
+
+
     
+![jpg](pic3/output_4_1.png) 
 
 
 
-<div style="text-align: center;">
-  <img src="pic3/output_4_1.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
-    
+![jpg](pic3/output_4_2.png) 
 
 
-
-<div style="text-align: center;">
-  <img src="pic3/output_4_2.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
-    
-
-
-
-<div style="text-align: center;">
-  <img src="pic3/output_4_3.png" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
-
+![jpg](pic3/output_4_3.png) 
