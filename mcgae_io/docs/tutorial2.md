@@ -349,6 +349,6 @@ model.train(weight_decay=5e-4,
 
 
     
-![png](pic2/3d_out.png)
+![jpg](pic2/3d_out.jpg)
     
 
