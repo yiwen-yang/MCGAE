@@ -242,9 +242,8 @@ plt.tight_layout()
 
     Searching resolution...
     
-<div style="text-align: center;">
-  <img src="pic3/mcgae.jpg" alt="Mouse Olfactory" style="width: 200px; height: auto;"/>
-</div>
+
+![jpg](pic3/mcgae.jpg)  
 
 
 
