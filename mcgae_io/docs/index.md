@@ -1,10 +1,7 @@
 # Welcome to MCGAE Tutorial
 
-<div style="text-align: center;">
+<div style="text-align: justify;">
   <img src="pic2/workflow.png" alt="Example Image" width="300" height="400"/>
-</div>
-<div style="text-align: center;">
-  <img src="pic2/workflow.png" alt="Example Image" style="width: 500px; height: auto;"/>
 </div>
 
 <div style="text-align: justify;">
