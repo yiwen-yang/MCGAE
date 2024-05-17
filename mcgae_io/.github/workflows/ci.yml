@@ -3,7 +3,7 @@ name: Deploy MkDocs site to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main  # 设定部署的分支
 
 jobs:
   deploy:
