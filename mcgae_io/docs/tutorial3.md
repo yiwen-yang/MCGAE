@@ -282,6 +282,6 @@ sc.pl.spatial(adata2, img_key="hires", color="ALB", title="ALB_denoise", color_m
 
 
     
-![png](output_4_3.png)
+![png](pic3/output_4_3.png)
     
 
