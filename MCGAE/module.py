@@ -285,7 +285,7 @@ class MGAE(nn.Module):
             else:
                 raise ValueError("At least one of use_emb_x_rec and use_emb_g_rec must be True.")
         elif self.fusion_mode == "vanilla":
-            emb = emb_orig  # or whichever embedding you want to use
+            emb = feat_pca_vae  # or whichever embedding you want to use
             emb_x_rec = emb
             emb_g_rec = emb
         else:
