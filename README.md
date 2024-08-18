@@ -6,6 +6,7 @@
 
 
 MCGAE is a novel deep computational framework designed for comprehensive analysis of spatial transcriptomics data across platforms, integrating morphological images.
+
 Hardware Specifications
 Processor: Intel Core i9-12900K @ 3.20 GHz
 Memory: 64 GB RAM
